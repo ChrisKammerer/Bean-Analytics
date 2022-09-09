@@ -18,6 +18,7 @@ public class GraphMaker extends JFrame{
     private XYDataset xydataset;
 
     public GraphMaker(String title) throws IOException {
+        //new comment
         beans = new DataReader("Dry_Beans.csv");
         xydataset = createDataset(beans.createBeanList());
         JFreeChart chart = ChartFactory.createScatterPlot(
